@@ -182,7 +182,9 @@ main{
     height: 80px;
     width: 160px;
     border-radius: 5px;
-    margin: 0px 600px;
+    position: relative;
+    bottom: 60px;
+    left: 620px;
 }
 /*-----section end-----*/
 
@@ -260,3 +262,43 @@ main{
 
 /*-----media query------*/
 
+@media screen and (max-width:576px) {
+     section, main, .section, .fact-container, footer{
+        display: none;
+    }
+
+    /*-----nav part___*/
+    .nav-container{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        text-align: center;
+        justify-content: center;
+        gap: 12px;
+        padding-right: 50px;
+    }
+    .nav-title{
+        margin-right: 100px;
+    }
+    .nav-description{
+        margin-right: 150px;
+    }
+
+
+      /*-----header part------*/
+    .header-description h1{
+        font-size: 30px;
+    }
+
+    .header-description p{
+        padding: 0px 10px;
+    }
+    .header-img img{
+        width: 100%;
+    }
+
+    /*-----main part-----*/
+    
+    
+    
+    
+}
