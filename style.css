@@ -263,18 +263,13 @@ main{
 /*-----media query------*/
 
 @media screen and (max-width:576px) {
-     section, main, .section, .fact-container, footer{
-        display: none;
-    }
+    
 
     /*-----nav part___*/
     .nav-container{
-        display: grid;
-        grid-template-columns: repeat(1 ,1fr);
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        justify-content: center;
-        gap: 12px;
-        padding-right: 50px;
     }
     .nav-title{
         margin-right: 100px;
@@ -284,21 +279,68 @@ main{
     }
 
 
-      /*-----header part------*/
-    .header-description h1{
-        font-size: 30px;
+    /*-----header part----*/
+    .header-container{
+        flex-direction: column;
     }
-
-    .header-description p{
+    .header-description{
         padding: 0px 10px;
+    }
+    .header-img{
+        width: 350px ;
     }
     .header-img img{
         width: 100%;
     }
+    
+    /*----main part-----*/
+    .main-container{
+        flex-direction: column-reverse;
+       
+    }
+    .main-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-description{
+        margin-bottom: 50px;
+        text-align: center;
+        
+    }
 
-    /*-----main part-----*/
+
+    /*----section part-----*/
     
-    
-    
+    .section-container{
+        flex-direction: column;
+        width: 500px;
+        margin-right: 0px;
+    }
+    .section-img{
+        width: 500px;
+    }
+    .section-img img{
+        width: 100%;
+    }
+    .section-box{
+        height: 100px;
+    }
+
+    /*----another section part---*/
+    .fact-items{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    /*---footer part---*/
+    .footer-items{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .footer-title{
+        padding: 0px 15px;
+    }
+    .footer-end{
+        width: 500px;
+    }
     
 }
