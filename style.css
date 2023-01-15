@@ -210,7 +210,13 @@ main{
     justify-content: space-between;
     margin: 130px 80px;
 }
+.item:hover{
+    width: 200px;
+  height: 200px;
+  transform: rotate(360deg);
+}
 .item{
+    transition:  width 2s, height 2s, transform 2s;
     border: 1px solid rgb(219, 144, 4);
     height: 150px;
     width: 170px;
